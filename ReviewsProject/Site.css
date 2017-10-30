@@ -1,0 +1,17 @@
+﻿body {
+}
+
+#jumbotron {
+    
+    background-image: url('pics/santaclaus_marvel.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100px;
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+

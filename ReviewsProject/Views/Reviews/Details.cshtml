@@ -1,0 +1,44 @@
+﻿@model ReviewsProject.Models.Review
+
+@Styles.Render("~/styles/myStylesheet.css")
+
+@{
+    ViewBag.Title = "Details";
+
+}
+
+<h2>Reviews</h2>
+@*Tried making a jumbotron and image display.Wasnt working but something with a little more time i know can get right*@
+<div container="fluid"></div>
+<div class"jumbotron">
+    <div class="text-center">
+        
+
+            <h1>
+                @Html.DisplayFor(model => model.Name)
+            </h1>
+
+            <h3>
+                @Html.DisplayNameFor(model => model.Description) : @Html.DisplayFor(model => model.Description)
+            </h3>
+
+            <h3 style="font-style:italic">
+                @Html.DisplayNameFor(model => model.OriginDate) : @Html.DisplayFor(model => model.OriginDate)
+            </h3>
+
+            <p>
+                @Html.DisplayFor(model => model.Description)
+            </p>
+
+            <p>
+                @Html.DisplayNameFor(model => model.Rating) : @Html.DisplayFor(model => model.Rating)
+            </p>
+
+        </div>
+    </div>
+
+      
+        <p>
+            @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
+            @Html.ActionLink("Back to List", "Index")
+        </p>
